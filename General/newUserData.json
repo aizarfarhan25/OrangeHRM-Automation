@@ -1,0 +1,7 @@
+{
+  "CreateNewUserTest": {
+    "username": "testuser",
+    "password": "test123",
+    "confirmPassword": "test123"
+  }
+}
