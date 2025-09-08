@@ -19,11 +19,11 @@ export class LoginPage extends BasePage {
     await this.goto();
     
     // Tunggu dan isi username
-    await this.LoginElements.userName.waitFor({
+    await this.LoginElements.username.waitFor({
       state: "visible",
-      timeout: 10000,
+      timeout: 30000,
     });
-    await this.LoginElements.userName.fill(data.LoginDataTest.validUser.username);
+    await this.LoginElements.username.fill(data.LoginDataTest.validUser.username);  
     this.log(`Username diisi: ${data.LoginDataTest.validUser.username}`);
     
     // Tunggu dan isi password
@@ -51,11 +51,11 @@ export class LoginPage extends BasePage {
     await this.goto();
     
     // Tunggu dan isi username
-    await this.LoginElements.userName.waitFor({
+    await this.LoginElements.username.waitFor({
       state: "visible",
       timeout: 10000,
     });
-    await this.LoginElements.userName.fill(
+    await this.LoginElements.username.fill(
       data.LoginDataTest.invalidUser.username
     );
     this.log(`Username diisi: ${data.LoginDataTest.invalidUser.username}`);
