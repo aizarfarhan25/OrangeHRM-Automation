@@ -31,9 +31,9 @@ test.describe("User Management Tests", () => {
     console.log("✅ Status user dipilih");
 
     // 6. Input employee name
-    await createNewUserPage.inputEmployeeName("Orange");
+    await createNewUserPage.inputEmployeeName("Thomas Benny");
     await page.waitForLoadState("networkidle");
-    console.log("✅ Employee name 'Orange Test' diinput dan dipilih dari dropdown");
+    console.log("✅ Employee name 'Thomas Benny' diinput dan dipilih dari dropdown");
     
     // 7. Input username dengan format aizar_test_(timestamp) supaya tidak sama
     const createdUsername = await createNewUserPage.createNewUser('Password123');

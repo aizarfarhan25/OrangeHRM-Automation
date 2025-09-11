@@ -6,8 +6,8 @@ export class LoginElements {
   readonly loginButton: Locator
 
     constructor(private readonly page: Page) {
-    this.username = page.locator("//input[@placeholder='username']");
-    this.password = page.locator("//input[@placeholder='password']");
+    this.username = page.locator("//input[@placeholder='Username']");
+    this.password = page.locator("//input[@placeholder='Password']");
     this.loginButton = page.locator("//button[@type='submit']");
   }
 

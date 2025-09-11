@@ -24,7 +24,7 @@ export class CreateNewUserElements {
     this.statusOptions = page.locator(".oxd-select-dropdown .oxd-select-option").filter({ hasText: "Enabled" });
     this.employeeNameField = page.locator("//input[@placeholder='Type for hints...']");
     this.employeeNameOptions = page.locator(".oxd-autocomplete-dropdown .oxd-autocomplete-option");
-    this.selectEmployeeName = page.locator(".oxd-autocomplete-dropdown .oxd-autocomplete-option").filter({ hasText: "Orange Test" });
+    this.selectEmployeeName = page.locator(".oxd-autocomplete-dropdown .oxd-autocomplete-option").filter({ hasText: "Thomas Kutty Benny" });
     this.usernameField = page.locator("(//input[@class='oxd-input oxd-input--active'])[2]");
     this.passwordField = page.locator("(//input[@type='password'])[1]");
     this.confirmPasswordField = page.locator("(//input[@type='password'])[2]");
